@@ -13,6 +13,3 @@ Commits: Já sobre os Commits, eles eu entendi que são as alterações que faze
 Branches: Em relação aos Branches, aprendi que são ramificações do projeto principal. Eles são usados para desenvolver recursos novos ou experimentais sem afetar o código principal. O que é de extrema importância aprender a criar e trabalhar com branches, afinal normalmente nós Devs trabalhamos rotineiramente em equipe.
 
 Pull Requests: Pull Requests são solicitações que servem para mesclar o código que nós criamos em um repositório com o código principal do repositório. É fundamental nós aprendermos como fazer e como trabalhar com o Pull Requests.
-
-Essas são as coisas fundamentais que aprendi sobre o GitHub estudando por plataformas online.
-
