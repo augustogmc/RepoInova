@@ -1,7 +1,7 @@
 # O meu aprendizado na InovaTech
 
->Atualmente estudando sobre o GitHub, comecei a entender para utilizar de forma mais eficaz, separarei em tópicos cada parte de conhecimento.
-...
+>Atualmente estudando sobre o GitHub, comecei a entender para utilizar de forma mais eficaz, separarei em tópicos cada parte de conhecimento e essas são as coisas fundamentais que aprendi sobre o GitHub estudando por plataformas online.
+
 Versionamento de código: Tive que entender que GitHub é um sistema de controle de versão de código e a maneira de como funciona para usar de uma maneira eficaz.
 
 Git: Aprendi que o Git é um softwere livre de controle de versão distribuído que é utilizado para gerenciar projetos hospedados no GitHub e que é essencial o apredizado de pelo menos o básico para trabalhar com GitHub.
@@ -15,4 +15,4 @@ Branches: Em relação aos Branches, aprendi que são ramificações do projeto 
 Pull Requests: Pull Requests são solicitações que servem para mesclar o código que nós criamos em um repositório com o código principal do repositório. É fundamental nós aprendermos como fazer e como trabalhar com o Pull Requests.
 
 Essas são as coisas fundamentais que aprendi sobre o GitHub estudando por plataformas online.
-...
+
