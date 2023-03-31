@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #f6f6f6;
+  --bg-color: black;
+  --stroke-color: #3454d1;
+  --surface-color: #ffffff;
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-color: #e6e6e6;
+  --stroke-color: #357ded;
+  --surface-color: black;
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+body * {
+  color: var(--surface-color);
+}
+
+/* switch */
+#switch {
+  position: relative;
+  width: 64px;
+
+  margin: 10px auto;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--surface-color-hover);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  left: 0px;
+  top: calc(50% - 24px / 2);
+  background: #efefef;
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.icon-menu img {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.icon-menu img:hover {
+  border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+#barra-menu {
+  background: var(--stroke-color);
+  height: 120vh;
+  width: 0px;
+  transition: 0.3s all;
+}
+
+#barra-menu ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+#barra-menu ul li a {
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+#barra-menu ul li a:hover {
+  border: 1.5px solid var(--text-color);
+  background: var(--surface-color-hover);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.titulo-destaque {
+  color: var(--stroke-color);
+}
+
+#apresentacao {
+  width: 80%;
+  max-width: 1000px;
+  margin: 6% auto 0px;
+  display: flex;
+  align-items: center;
+}
+
+#apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 30px;
+  font-family: "Krona One", sans-serif;
+  color: var(--text-color);
+}
+
+.apresentacao__conteudo__paragrafo {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresetacao__conteudo__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.apresentacao__conteudo__links__subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  color: var(--text-color);
+}
+
+.apresetacao__conteudo__links__link {
+  width: 330px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600px;
+  padding: 21.5px 5px;
+  text-decoration: none;
+  color: var(--surface-color);
+  font-family: "Montserrat", sans-serif;
+  border: 1.5px solid var(--stroke-color);
+}
+
+.apresetacao__conteudo__links__link:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+.imagem img {
+  width: 300px;
+  height: 430px;
+}
+
+@media screen and (max-width: 800px) {
+  #apresentacao {
+    width: 80%;
+    max-width: 450px;
+    margin: 56px auto 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #apresentacao__conteudo {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
+}
