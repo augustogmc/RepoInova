@@ -5,7 +5,7 @@
 
 <h1> Esse é o formato atual do meu portifólio </h1>
 
-<p> Vocês diretores, pediram para que nós de front-end, executássemos o nosso portfólio, então eu dei início. Então, coloquei botão com menu para abrir e fechar, dessa forma, dentro desse menu, instalei um switch que faz a pagina ficar no modo light ou dark com o JS, ficando a gosto do usuário a forma de visualização.
+<p> Vocês diretores, pediram para que nós de front-end, fizéssemos o nosso portfólio, então eu dei início. Com isso, coloquei botão com menu para abrir e fechar, dessa maneira, dentro do próprio menu, eu instalei um switch que faz a pagina ficar no modo light ou dark utilizando o JS, assim fica a gosto do usuário a forma de visualização.
 
 <br/>
 <br/>
